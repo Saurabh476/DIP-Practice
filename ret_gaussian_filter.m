@@ -1,6 +1,6 @@
-function [gaus_filt] = ret_gaussian_filter(size)
+function [gaus_filt] = ret_gaussian_filter(size,sig)
 % This returns the gaussian filter for the passed size
-sigma = 1.0;
+sigma = sig;
 two_sig_sq = 2*sigma*sigma;
 two_pi_sig_sq = 3.14*two_sig_sq;
 gaus_filt = ones(size);
